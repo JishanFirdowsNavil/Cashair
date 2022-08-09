@@ -1,0 +1,94 @@
+<html>
+    <head>
+              <title>Admin Registration</title>
+    </head>
+    <body>
+        <form name="adding" method = "POST" action="./../controller/registration.php">
+           
+            <h1 > Admin Registration : </h1>
+            <hr>
+            <fieldset>
+            <legend> Basic Information :</legend>
+            <br>
+            <label for="fname"> First Name :  </label>
+            <br>
+            <input type="text" id="fname" name="fname" value="">
+            <br><br>
+            <label for="fname"> Last Name :  </label>
+            <br>
+            <input type="text" id="lname" name="lname" value="">
+            <br><br>
+            <label for="gender"> Gender :  </label>
+            <br>
+              <input type="radio" name="gender" value="male">
+              <label for="Male">Male</label>
+              <br>
+              <input type="radio"  name="gender" value="female">
+              <label for="Female">Female</label>
+              <br><br>  
+              <label for="DOB"> Date Of Birth :  </label>
+              <br>
+              <input type="date"  name="DOB">
+              <br><br> 
+              <label for="religion"> Religion :  </label>
+              <br>
+              <select id="religion" name="religion">
+                <option value="" selected="selected" disabled="disabled"> Select One </option>
+                <option value="Hinduism">Hinduism</option>
+                <option value="Islam">Islam</option>
+                <option value="Christianity">Christianity</option>
+                <option value="Buddhism">Buddhism</option>
+                <option value="Other">Other</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend> Contact Information : </legend>
+            <br>
+            <label for="praddress"> Present Address : </label>
+            <br>
+            <textarea id="praddress" name="praddress" >
+            </textarea>
+            <br><br> 
+            <label for="pmaddress"> Permanent Address : </label>
+            <br>
+            <textarea id="pmaddress" name="pmaddress" >
+            </textarea><br>
+            <label for="phone"> Phone : </label><br>
+            <input type="tel" id="phone" name="phone" value="">
+            <br><br>
+            <label for="email"> Email :  </label><br>
+            <input type="email" id="email" name="email" value="">
+            <br><br>
+        
+        </fieldset>
+            <br>
+            <fieldset>
+                <legend> Credentials : </legend>
+                <br>
+                <label for="username"> Username :  </label>
+                <br>
+                <input type="text" id="username" name="username" >
+                </input>
+                <br><br> 
+                <label for="password"> Password :  </label>
+                <br>
+                <input type="password" id="password" name="password" >
+                </input>
+                <br><br> 
+                <label for="confirmpassword"> Confirm Password :  </label>
+                <br>
+                <input type="password" id="confirmpassword" name="confirmpassword" >
+                </input>
+                <br>
+            </fieldset>
+            <br>
+            <input type="submit" value=" Submit " name="submit"></form>
+            <br>
+           <Button><a href="../controller/homepage.php">Back</a></Button>
+            <br><br> 
+        
+        </form>   
+        
+    </body>
+    </html>
